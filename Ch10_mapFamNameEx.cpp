@@ -26,7 +26,7 @@ int main()
 		}
 		cout << "Enter children's name: (Ctrl+Z to exit):" << endl;
 		while( cin >> childName )
-			ret.first->second.pushback( childName );
+			ret.first->second.push_back( childName );
 		cin.clear();
 	} while ( cin );
 	cin.clear();
@@ -37,7 +37,7 @@ int main()
 		cout << "No matched surname " << surname << " found"  << endl;
 	else {
 		cout << "Children have this " << surname << " surname are:"  << endl;
-		for( vector<sting>::iterator iter = ret->second.begin();
+		for( vector<string>::iterator iter = ret->second.begin();
 			iter != ret->second.end(); iter++ )
 			cout << *iter++ << endl;
 	}

@@ -26,7 +26,7 @@ int main()
 		}
 		cout << "Enter children's name: (Ctrl+Z to exit):" << endl;
 		while( cin >> childName >> birthDay )
-			ret.first->second.pushback( make_pair(childName, birthDay) );
+			ret.first->second.push_back( make_pair(childName, birthDay) );
 		cin.clear();
 	} while ( cin );
 	cin.clear();
@@ -38,7 +38,7 @@ int main()
 		cout << "No matched surname " << surname << " found"  << endl;
 	else {
 		cout << "Children have this " << surname << " surname are:"  << endl;
-		for( vector<sting>::iterator iter = ret->second.begin();
+		for( PersonMap::iterator iter = ret->second.begin();
 			iter != ret->second.end(); iter++ )
 			cout << "Name: "<< iter->first <<"\t\tBithday:" << iter->second << endl;
 	}
