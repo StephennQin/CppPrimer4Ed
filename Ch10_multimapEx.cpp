@@ -1,4 +1,4 @@
-// C++ Primer 4th Edition Chapter 10 Exercises Section 10.5.2 Excercise 10.26 & 10.27
+// C++ Primer 4th Edition Chapter 10 Exercises Section 10.5.2 Excercise 10.26 & 10.27 & 10.28
 #include<iostream>
 #include<map>
 #include<string>
@@ -45,10 +45,31 @@ int main()
         cout << "No match found!" << endl;
     // end for Exercise 10.27
 
-    // Final stored items
+    // Final stored items Output
     cout << "author\t\twork:" << endl;
     for( iter = authors.begin(); iter != authors.end(); iter++)
         cout << iter->first << "\t\t" << iter->second << endl;
+
+    // for Exercise 10.28
+    iter = authors.begin();
+    if ( iter == authors.end() )
+    {
+        cout << "Empty multimap!" << endl;
+        return 0;
+    }
+    string currAuthor, preAuthor;
+    do{
+        currAuthor = iter->first;
+        if ( preAuthor.empty() || currAuthor[0] != preAuthor[0] )
+            cout << "Author Names Begining with '" << currAuthor[0] << "' :" <<endl;
+        cout << currAuthor;
+        for (pos = authors.equal_range(currAuthor); pos.first != pos.second; pos.first++)
+            cout << ", " << pos.first->second;
+        cout << endl;
+        iter = pos.second;
+        preAuthor = currAuthor;
+    } while ( iter != authors.end() );
+    // end for Exercise 10.28
 
     return 0;
 }
