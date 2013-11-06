@@ -17,3 +17,21 @@
 	"TextQuery.h"
 	<stdexcept>
 
+1383721376 source:e:\programspace\codeblocks\ch10_textquery\querymain.cpp
+	"TextQuery.h"
+
+1383721205 e:\programspace\codeblocks\ch10_textquery\textquery.h
+	<iostream>
+	<fstream>
+	<set>
+	<string>
+	<vector>
+	<map>
+	<stdlib.h>
+	<sstream>
+	<utility>
+
+1383721648 source:e:\programspace\codeblocks\ch10_textquery\textquery.cpp
+	"TextQuery.h"
+	<stdexcept>
+

@@ -1,0 +1,20 @@
+# depslib dependency file v1.0
+1383726818 source:e:\programspace\codeblocks\ch10_textquery\myquerymain.cpp
+	"myTextQuery.h"
+
+1383726854 e:\programspace\codeblocks\ch10_textquery\mytextquery.h
+	<iostream>
+	<fstream>
+	<string>
+	<vector>
+	<map>
+	<stdlib.h>
+	<sstream>
+	<utility>
+	<cstring>
+	<cctype>
+
+1383726827 source:e:\programspace\codeblocks\ch10_textquery\mytextquery.cpp
+	"myTextQuery.h"
+	<stdexcept>
+

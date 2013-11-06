@@ -1,3 +1,5 @@
+// C++ Primer 4th Edition Chapter 10 Section 10.3.9
+// A Word Transformation Map
 #include <map>
 #include <vector>
 #include <iostream>

@@ -1,6 +1,6 @@
-// program takes single argument specifying the file to query
+// C++ Primer 4th Edition Chapter 10 Exercises Section 10.6.4 Exercise 10.32
 
-#include "TextQuery.h"
+#include "myTextQuery.h"
 
 using namespace std;
 
@@ -20,11 +20,18 @@ int main(int argc, char **argv)
 		cout << "enter word to look for,or q to quit" << endl;
 		string s;
 		cin >> s;
-		// stop if hit eof on input or a 'q'is entered
+		// change letters into lower case
+		string ret;
+		for ( string::const_iterator it = s.begin(); it != s.end(); ++it)
+		//for ( string::iterator it = s.begin(); it != s.end(); ++it)
+			ret += tolower( *it );
+			// *it = tolower( *it );
+		s = ret;
+		// stop if hit eof on input or a 'q' is entered
 		if (!cin || s == "q")
 			break;
-        	// get the set of line numbers on which this word appears
-		set<TextQuery::line_no> locs = tq.run_query(s);
+        	// get the vector set of line numbers on which this word appears
+		vector<TextQuery::line_no> locs = tq.run_query(s);
 		// print count and all occurrences, if any
 		print_results(locs, s, tq);
 	}

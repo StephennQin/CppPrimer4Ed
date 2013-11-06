@@ -1,4 +1,4 @@
-// C++ Primer 4th Edition Chapter 10 Exercises Section 10.3.9 Excercise 10.19
+// C++ Primer 4th Edition Chapter 10 Exercises Section 10.3.9 Exercise 10.19
 #include<iostream>
 #include<utility>
 #include <map>

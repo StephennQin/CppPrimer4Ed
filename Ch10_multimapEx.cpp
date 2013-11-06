@@ -1,4 +1,4 @@
-// C++ Primer 4th Edition Chapter 10 Exercises Section 10.5.2 Excercise 10.26 & 10.27 & 10.28
+// C++ Primer 4th Edition Chapter 10 Exercises Section 10.5.2 Exercise 10.26 & 10.27 & 10.28
 #include<iostream>
 #include<map>
 #include<string>

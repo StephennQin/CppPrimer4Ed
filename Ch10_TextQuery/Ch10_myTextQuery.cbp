@@ -2,7 +2,7 @@
 <CodeBlocks_project_file>
 	<FileVersion major="1" minor="6" />
 	<Project>
-		<Option title="Ch10_TextQuery" />
+		<Option title="Ch10_myTextQuery" />
 		<Option pch_mode="2" />
 		<Option compiler="gcc" />
 		<Build>
@@ -31,10 +31,9 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
-		<Unit filename="Ch10_TextQuery.depend" />
-		<Unit filename="TextQuery.cpp" />
-		<Unit filename="TextQuery.h" />
-		<Unit filename="querymain.cpp" />
+		<Unit filename="myTextQuery.cpp" />
+		<Unit filename="myTextQuery.h" />
+		<Unit filename="myquerymain.cpp" />
 		<Extensions>
 			<code_completion />
 			<envvars />

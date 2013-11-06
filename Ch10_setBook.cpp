@@ -1,4 +1,4 @@
-// C++ Primer 4th Edition Chapter 10 Exercises Section 10.4.2 Excercise 10.25
+// C++ Primer 4th Edition Chapter 10 Exercises Section 10.4.2 Exercise 10.25
 #include<iostream>
 #include<set>
 #include<vector>
