@@ -1,0 +1,3 @@
+The inserter adaptor provides a more general form.
+We start by using find to locate an element in ilst.
+The elements are inserted just ahead of the element denoted by it.
