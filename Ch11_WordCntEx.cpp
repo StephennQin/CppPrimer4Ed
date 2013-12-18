@@ -34,8 +34,8 @@ int main()
     file.open( fileName.c_str() );
     if ( ! file.is_open()  )
     {
-	cerr << "No input file!" << endl;
-	return EXIT_FAILURE;
+		cerr << "No input file!" << endl;
+		return EXIT_FAILURE;
     }
     while ( getline(file, line) )
     {
