@@ -5,7 +5,7 @@
 #include<string>
 #include<vector>
 #include<algorithm>
-#include <cstdlib> // header for EXIT_FALURE
+#include <cstdlib> //EXIT_FALURE 的头文件
 
 using namespace std;
 
@@ -69,6 +69,5 @@ int main()
     }
     */
     cout << counter << " " << make_plural( counter, "word", "s" ) << " " << val << " characters or longer" << endl;
-    file.close();
     return 0;
 }
