@@ -33,6 +33,14 @@ int main()
         cout << "Match found! The last occurance of" << ival
             << " is at position " << *r_iter.base() //*(--r_iter)
             <<endl;
+    //for Exercise 11.21
+    vector<int>::reverse_iterator r_beg = ivec.rbegin(), r_end = ivec.rbegin();
+    r_beg += 3; r_end += 8;
+    list<int> ilst;
+    copy( r_beg, r_end, inserter(ilst,ilst.begin()) );
+    for( list<int>::iterator iter_lst = ilst.begin(); iter_lst != ilst.end(); ++iter_lst )
+        cout << *iter_lst <<"\t";
+    cout << endl;
 
     return 0;
 }
