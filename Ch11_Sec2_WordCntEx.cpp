@@ -5,7 +5,7 @@
 #include<string>
 #include<vector>
 #include<algorithm>
-#include <cstdlib> // header for EXIT_FALURE
+#include<cstdlib> // header for EXIT_FALURE
 
 using namespace std;
 
@@ -57,10 +57,10 @@ int main()
     stable_sort( words.begin(), words.end(), isShorter );// sort words by size, but maintain alphabetic order for words of the same size
     cout << "Enter the length of word you want to count:" << endl;
     cin >> val;  cin.clear();
-    // for Exercise 10.9
+    // for Exercise 11.9
     vector<string>::size_type counter = count_if( words.begin(), words.end(), GTn );
     /*
-    // for Exercise 10.10
+    // for Exercise 11.10
     vector<string>::size_type counter = 0;
     ster = words.begin();
     while ( (ster = find_if( ster, words.end(),GTn )) != words.end() )
