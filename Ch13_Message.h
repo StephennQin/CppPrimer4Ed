@@ -72,8 +72,6 @@ class Message
         void remove_Msg_from_Folders();
 };
 
-#endif // MESSAGE_H
-
 Folder::~Folder()
 {
     //dtor
@@ -196,3 +194,5 @@ void Message::remFldr(Folder* fldr)
 {
     folders.erase( fldr );
 }
+
+#endif // MESSAGE_H
