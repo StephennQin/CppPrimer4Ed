@@ -30,12 +30,11 @@ int Employee::counter = -1;
 class Employer
 {
 public:
-	Employer():name("NoName"), id(counter)
-		{ setID();
-		}
-	Employer( std::string EmName ):name(EmName), id(counter)
+	Employer():name("NoName")
 		{ setID(); }
-	Employer( const Employer& other ):name(other.name), id(counter)
+	Employer( std::string EmName ):name(EmName)
+		{ setID(); }
+	Employer( const Employer& other ):name(other.name)
 		{ setID(); }
 	Employer& operator= (const Employer& other)
 	{
@@ -69,3 +68,8 @@ private:
 };
 
 int Employer::counter = -1;
+
+int main()
+{
+    return 0;
+}
