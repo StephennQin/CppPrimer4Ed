@@ -20,6 +20,15 @@ bool GTn( const string &s )// determine whether a length of a given word is n or
     return s.size() >= val;
 }
 
+class GT_cls
+{
+public:
+    GT_cls ( size_t val = 0 ): bound(val) {}
+    bool operator() ( const string &s ) { return s.size() >= bound; }
+private:
+    string::size_type bound;
+};
+
 inline string make_plural( size_t ctr, const string &word, const string &ending )
 {
     return ( ctr == 1 ) ? word : word + ending;
@@ -59,6 +68,8 @@ int main()
     cin >> val;  cin.clear();
     // for Exercise 11.9
     vector<string>::size_type counter = count_if( words.begin(), words.end(), GTn );
+    //vector<string>::size_type counter = count_if( words.begin(), words.end(), GT_cls(val) );
+
     /*
     // for Exercise 11.10
     vector<string>::size_type counter = 0;
